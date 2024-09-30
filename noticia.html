@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>noticia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <style>
+        body {
+            margin: 0;
+        }
+        .navbar {
+            position: fixed; 
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background-color: #8aada6;
+        }
+        .content {
+            padding-top: 60px; 
+        }
+        .section-title {
+            margin-top: 40px;
+            color: #333;
+            border-bottom: 2px solid #8aada6;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .logo {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        .card-item {
+            border: none;
+            margin-bottom: 20px;
+            background-color: #f8f9fa;
+        }
+        .card-header {
+            background-color: #8aada6;
+            color: white;
+        }
+        .item-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body class="text-bg-secondary">
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="inicio.html">INICIO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="tienda.html">TIENDA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="noticia.html">NOTICIA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comunidad.html">COMUNIDAD</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ayuda.html">AYUDA</a>
+                    </li>
+                </ul>
+                <a class="nav-link ms-auto" href="cuenta.html" title="Mis Datos">
+                     <img src="content://media/external/downloads/1000070305" alt="Logo" style="width: 40px; height: 40px;">  <span style="color: black;">Cuenta</span>
+                </a>
+                <a class="nav-link btn ms-auto" href="index.html" style="background-color: #8aada6; color: black;">Cerrar sesión</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content container mt-4">
+        <h1 class="text-center">Bienvenido a J.A.D.S</h1>
+        <p class="text-center">Explora nuestras últimas novedades y juegos.</p>
+        
+        <!-- Sección de Noticias -->
+        <section>
+            <h2 class="section-title">Últimas Noticias</h2>
+            <div class="card card-item">
+                <div class="card-body">
+                    <h5 class="card-title">Lanzamiento del nuevo juego XYZ</h5>
+                    <p class="card-text">Descubre el nuevo título que está revolucionando el mercado de los videojuegos.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sección de Ítems más vendidos -->
+        <section>
+            <h2 class="section-title">Ítems Más Vendidos</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card card-item">
+                        <img src="item1.jpg" class="card-img-top item-img" alt="Ítem 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Ítem 1</h5>
+                            <p class="card-text">Descripción del ítem 1.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-item">
+                        <img src="item2.jpg" class="card-img-top item-img" alt="Ítem 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Ítem 2</h5>
+                            <p class="card-text">Descripción del ítem 2.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-item">
+                        <img src="item3.jpg" class="card-img-top item-img" alt="Ítem 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Ítem 3</h5>
+                            <p class="card-text">Descripción del ítem 3.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sección de Colaboradores -->
+        <section>
+            <h2 class="section-title">Colaboradores</h2>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <img src="logo_colaborador1.png" class="logo" alt="Colaborador 1 Logo"> Nombre Colaborador 1
+                </li>
+                <li class="list-group-item">
+                    <img src="logo_colaborador2.png" class="logo" alt="Colaborador 2 Logo"> Nombre Colaborador 2
+                </li>
+                <li class="list-group-item">
+                    <img src="logo_colaborador3.png" class="logo" alt="Colaborador 3 Logo"> Nombre Colaborador 3
+                </li>
+            </ul>
+        </section>
+        
+        <!-- Sección de Donadores -->
+        <section>
+            <h2 class="section-title">Donadores</h2>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <img src="logo_donador1.png" class="logo" alt="Donador 1 Logo"> Nombre Donador 1
+                </li>
+                <li class="list-group-item">
+                    <img src="logo_donador2.png" class="logo" alt="Donador 2 Logo"> Nombre Donador 2
+                </li>
+                <li class="list-group-item">
+                    <img src="logo_donador3.png" class="logo" alt="Donador 3 Logo"> Nombre Donador 3
+                </li>
+            </ul>
+        </section>
+        
+        <!-- Sección del Top Comprador -->
+        <section>
+            <h2 class="section-title">Top Comprador</h2>
+            <div class="card card-item">
+                <div class="card-body">
+                    <img src="logo_topcomprador.png" class="logo" alt="Top Comprador Logo"> Nombre del Top Comprador
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sección de Drops -->
+        <section>
+            <h2 class="section-title">Drops Recientes</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card card-item">
+                        <img src="drop1.jpg" class="card-img-top item-img" alt="Drop 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Drop 1</h5>
+                            <p class="card-text">Descripción del drop 1.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-item">
+                        <img src="drop2.jpg" class="card-img-top item-img" alt="Drop 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Drop 2</h5>
+                            <p class="card-text">Descripción del drop 2.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-item">
+                        <img src="drop3.jpg" class="card-img-top item-img" alt="Drop 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Drop 3</h5>
+                            <p class="card-text">Descripción del drop 3.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="text-center mt-4">
+        <p>&copy; 2024 J.A.D.S. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
